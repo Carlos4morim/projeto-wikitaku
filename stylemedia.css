@@ -1,0 +1,211 @@
+@charset "UTF08";
+
+/*barra de navegação*/
+
+@media (max-width: 530px) {
+    nav > a{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-family: var(--font-padrao); 
+        padding: 10px 10px;
+    }
+}
+@media (max-width: 451px) {
+    nav > a{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-family: var(--font-padrao); 
+        padding: 10px 5px;
+    }
+}
+@media (max-width: 410px) {
+    nav{
+        background-color: var(--cor3);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 7px 30px;
+    }
+    nav > a{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-family: var(--font-padrao); 
+        padding: 5px 5px;
+        
+    }    
+    nav > a:hover{
+        border: 1px transparent;
+        background-color: var(--cor5);
+        color: var(--cor4);
+        border-radius: 10px;
+        transition: .5s;
+    }
+}
+@media (max-width: 320px){
+    article > p{
+        font-family: Arial, Helvetica, sans-serif;
+        text-indent: 30px;
+        margin: 20px 0px;
+        text-align: justify;
+        line-height: 1.8em;
+        font-size: 0.9em;
+    
+    }
+}
+
+/* Media olhos é parágrafo*/
+
+@media (max-width: 1309px){
+    .encurtado{
+        max-width: 690px;
+        position: relative;
+    }
+}
+@media (max-width: 1280px){
+    .encurtado{
+        max-width: 600px;
+        position: relative;
+    }
+}
+@media (max-width: 1190px){
+    .encurtado{
+        max-width: 500px;
+        position: relative;
+    }
+}
+@media (max-width: 1050px){
+    .encurtado{
+        max-width: 400px;
+        position: relative;
+    }
+    .imgOlho > img{
+        padding-top: 40px ;
+    }
+}
+@media (max-width: 930px){
+    .encurtado{
+        max-width: 300px;
+        position: relative;
+    }
+    .imgOlho > img{
+        padding-top: 100px ;
+    }
+}
+@media (max-width: 800px){
+    .encurtado{
+        max-width: 100%;   
+    }
+    .imgOlho{
+        height: 40vh;
+        position: relative;
+        padding-top: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width: 422px){
+    .imgOlho > img{
+        height: 20vh;
+        position: absolute;
+    }
+}
+
+/* Media de lista e parágrafos com imagem*/
+
+@media (max-width: 1293px){
+    ul > li{
+    max-width: 700px;
+    }
+}
+@media (max-width: 1233px){
+    ul > li{
+        max-width: 650px;
+        }
+    .formatos{
+        display: flex;
+        justify-content: end;
+        align-items: flex-end;
+        margin-top: -260px;
+        margin-bottom: 40px;
+        margin-left: 10px;
+}
+}
+@media (max-width: 1173px){
+    ul > li{
+        max-width: 600px;
+        }
+    .formatos{
+        display: flex;
+        justify-content: end;
+        align-items: flex-end;
+        margin-top: -260px;
+        margin-bottom: 40px;
+        margin-left: 10px;
+}
+}
+@media (max-width: 1110px){
+    ul > li{
+        max-width: 550px;
+        }
+    .formatos{
+        display: flex;
+        justify-content: end;
+        align-items: flex-end;
+        margin-top: -260px;
+         margin-bottom: 40px;
+        margin-left: 10px;
+}
+}
+@media (max-width: 1050px){
+    ul > li{
+        max-width: 500px;
+        }
+    .formatos{
+        display: flex;
+        justify-content: end;
+        align-items: flex-end;
+        margin-top: -320px;
+        margin-bottom: 40px;
+        margin-left: 10px;
+}
+}
+@media (max-width: 985px){
+    ul > li{
+        max-width: 100%;
+    }
+    .formatos{
+        display: none;
+    }
+}
+
+/*Container de animês*/
+
+@media (max-width: 649px){
+    .containeranimes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/*Diminuir imagens grandes da pagina em aparelhos menores*/
+
+@media (max-width: 500px){
+    .imgG2 > img{
+    width: 70%;
+    display: flex;
+    height: 70vh;
+    padding-bottom: 30px;
+    }
+    .imgG1 > img{
+        width: 100%;
+        margin: auto;
+        height: 60vh;
+    }
+}
+

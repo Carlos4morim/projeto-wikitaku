@@ -1,0 +1,328 @@
+@charset "utf-08";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yanone+Kaffeesatz:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --cor1: #45E9F6;
+    --cor2: #0CC29D;
+    --cor3: #F59A27;
+    --cor4: #C29F2B;
+    --cor5: #8F8050;
+
+    --font-padrao:'Roboto', sans-serif;
+    --font-titulo: 'Yanone Kaffeesatz', sans-serif;;
+
+}
+
+body{
+    background: no-repeat center/cover url('imagens/back-body3.jpg');    
+}
+
+header{
+    background: no-repeat center/cover url('imagens/banner1.jpg');    
+    height: 50vh;
+    text-align: center;
+    color: white;
+}
+
+header > h1{
+    font-family: var(--font-titulo);
+    font-size: 4em;
+    text-shadow: 2px 2px 7px black;
+    padding-top: 60px;
+}
+
+header > p{
+    font-family: var(--font-padrao);
+    font-weight: 300;
+    max-width: 500px;
+    margin: auto;
+    text-shadow: 2px 2px 7px black;
+    padding: 20px 10px;
+}
+
+nav{
+    background-color: var(--cor3);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0px 30px;
+}
+nav > a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: var(--font-padrao); 
+    padding: 10px 20px;
+}
+nav > a:hover{
+    border: 1px transparent;
+    background-color: var(--cor5);
+    color: var(--cor4);
+    border-radius: 10px;
+    transition: .5s;
+}
+main{
+    max-width: 80%;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+}
+main a{
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--cor3);
+}
+main a:hover{
+    color: var(--cor5);
+    text-decoration: underline;
+}
+article > h1{
+    font-size: 1.8em;
+    font-family: var(--font-padrao);
+    
+}
+article > h2{
+    font-family: var(--font-padrao);
+    font-size: 1.4em;
+    
+}
+article > h3{
+    text-align: center;
+    padding: 3px;
+    background-color: gray;
+    margin-left: -20px;
+    margin-right: -20px;
+    font-family: var(--font-padrao);
+}
+article > p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 30px;
+    margin: 20px 0px;
+    text-align: justify;
+    line-height: 1.8em;
+
+}
+article a::after{
+    content: "\00A0\1F517";
+}
+/*Imagem grande da página*/
+.imgG1 > img{
+    width: 100%;
+    margin: auto;
+    height: 90vh;
+}
+/*Imagem grande da página*/
+.imgG2 > img{
+    width: 100%;
+    margin: auto;
+    height: 90vh;
+    padding-bottom: 30px;
+}
+/* div da imagem de olho*/
+.imgOlho{
+    display: flex;
+    justify-content: right;
+}
+/*Imagem olho*/
+.imgOlho > img{
+    height: 30vh;
+    position: absolute;  
+}
+/*Parágrafo encurtado*/
+.encurtado {
+    max-width: 710px;
+    position: relative;
+}
+/*Div das melhores obras de osamu*/
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.356) ;
+    margin-bottom: 30px;
+}
+.card{
+    padding: 10px;
+    border: 1px solid transparent;
+    background-color: rgba(163, 163, 163, 0.192);
+    width: 30vh;
+    border-radius: 5px;
+    margin: 10px 10px;
+    
+}
+.card > img{
+    height: 30vh; 
+}
+.card:hover{
+    background-color:rgba(163, 163, 163, 0.329) ;
+}
+.card > p{
+    font-family: sans-serif;
+    font-size: 0.8em;
+    padding: 1px;
+    background-image: linear-gradient(to right, black, white);
+    color: white;
+}
+/*div videos youtube*/
+.containervideo{
+    background-color: var(--cor2);
+    padding: 20px;
+    padding-bottom: 58%;
+    position: relative; 
+    margin-left: -20px;
+    margin-right: -20px;
+      
+}
+.containervideo > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+/*Descrição rodapé do video*/
+
+.descricao{
+    margin-top: 0;
+    margin-left: -20px;
+    margin-right: -20px;
+    background-image: linear-gradient(to bottom, var(--cor2), rgb(252, 250, 250) );
+    font-weight: bold;
+    text-indent: 20px;
+}
+
+/*imagens de autores*/
+
+.box_img3 > div > img{
+    height: 50vh;
+    padding: 20px 20px 0 20px;    
+}
+.box_img3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box_img3 > div > p{
+    margin-top: -4px;
+    margin-bottom: 10px;
+    font-family: var(--font-padrao);
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+/*Lista de medias*/
+
+ul > li{
+    padding-bottom: 10px;
+    max-width: 750px;
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 20px;
+    
+}
+.formatos{
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    margin-top: -230px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    
+    
+}
+.formatos > img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxformatos{
+    border: 1px solid gray;
+    padding: 4px 4px 5px 4px;
+}
+.peformatos{
+    font-size: 13px;
+    color: gray;
+    font-family: var(--font-padrao);
+}
+
+aside{
+    border: 1px solid transparent;
+    background-color: var(--cor4);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+aside > h3{
+    font-family: var(--font-titulo);
+    font-size: 1.3em;
+    text-indent: 5px;
+    background-color: var(--cor2);
+    margin-left: -11px;
+    margin-right: -11px;
+    margin-top: -6px;
+    border-radius: 5px 5px 0 0;
+    padding: 5px;
+}
+aside > p{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 5px;
+}
+aside > div{
+    background-color: #fdecb4;
+    border-radius: 5px;
+    padding: 10px;
+}
+.boxanime{
+    border: 1px solid gray;
+    width: 230px;
+    height: 160px;
+    border-radius: 5px;
+    background-color: rgba(136, 129, 129, 0.308);
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 6px rgba(128, 128, 128, 0.836);
+}
+.boxanime:hover{
+    background-color: rgba(80, 76, 76, 0.308);
+}
+.boxanime > img{
+    width: 91%;
+    padding: 10px 10px 0px 10px;
+    
+}
+.boxanime > a{
+padding: 0px 10px;
+font-size: 1.1em;
+color: rgb(98, 121, 17);
+font-family: var(--font-titulo);
+}
+.containeranimes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+aside a::after{
+    content: url();
+}
+footer{
+    background-color: #F59A27;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+    padding: 5px 20px;
+}
+footer > p > a{
+    text-decoration: none;
+    font-weight: bold;
+}
+footer > p > a:hover{
+    text-decoration: underline;
+}
