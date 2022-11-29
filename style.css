@@ -122,21 +122,29 @@ article a::after{
     height: 90vh;
     padding-bottom: 30px;
 }
-/* div da imagem de olho*/
-.imgOlho{
+
+div.containerimagemparagrafo{
     display: flex;
-    justify-content: right;
 }
-/*Imagem olho*/
-.imgOlho > img{
-    height: 30vh;
-    position: absolute;  
+.imagemdeolho > img{
+    max-height: 25vh ;
 }
-/*Parágrafo encurtado*/
-.encurtado {
-    max-width: 710px;
-    position: relative;
+.imagemdeolho{
+    width: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.paragrafoencurtado{
+    width: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 30px;
+    margin: 20px 0px;
+    text-align: justify;
+    line-height: 1.8em;
+
+}
+
 /*Div das melhores obras de osamu*/
 .container{
     display: flex;
@@ -219,14 +227,19 @@ article a::after{
 }
 
 /*Lista de medias*/
-
+.ulencurtado{
+    width: 90vw; 
+}
 ul > li{
     padding-bottom: 10px;
-    max-width: 750px;
     text-align: justify;
     margin-left: 50px;
     margin-right: 20px;
-    
+}
+.boximagemdvd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .formatos{
     display: flex;
@@ -235,8 +248,6 @@ ul > li{
     margin-top: -230px;
     margin-bottom: 40px;
     margin-left: 10px;
-    
-    
 }
 .formatos > img{
     display: flex;
@@ -244,6 +255,7 @@ ul > li{
     align-items: center;
 }
 .boxformatos{
+    max-height: 40vh;
     border: 1px solid gray;
     padding: 4px 4px 5px 4px;
 }

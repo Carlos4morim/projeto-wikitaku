@@ -59,126 +59,29 @@
 
 /* Media olhos é parágrafo*/
 
-@media (max-width: 1309px){
-    .encurtado{
-        max-width: 690px;
-        position: relative;
+@media (max-width: 700px){
+    div.containerimagemparagrafo{
+        display: inline;
     }
-}
-@media (max-width: 1280px){
-    .encurtado{
-        max-width: 600px;
-        position: relative;
+    .paragrafoencurtado{
+        max-width: 100%;
+        
     }
-}
-@media (max-width: 1190px){
-    .encurtado{
-        max-width: 500px;
-        position: relative;
+    .imagemdeolho{
+        margin: auto
     }
-}
-@media (max-width: 1050px){
-    .encurtado{
-        max-width: 400px;
-        position: relative;
-    }
-    .imgOlho > img{
-        padding-top: 40px ;
-    }
-}
-@media (max-width: 930px){
-    .encurtado{
-        max-width: 300px;
-        position: relative;
-    }
-    .imgOlho > img{
-        padding-top: 100px ;
-    }
-}
-@media (max-width: 800px){
-    .encurtado{
-        max-width: 100%;   
-    }
-    .imgOlho{
-        height: 40vh;
-        position: relative;
-        padding-top: 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-@media (max-width: 422px){
-    .imgOlho > img{
-        height: 20vh;
-        position: absolute;
-    }
-}
 
+}
 /* Media de lista e parágrafos com imagem*/
 
-@media (max-width: 1293px){
+@media (max-width: 700px){
     ul > li{
-    max-width: 700px;
+        max-width: 65vw;
     }
-}
-@media (max-width: 1233px){
-    ul > li{
-        max-width: 650px;
-        }
-    .formatos{
-        display: flex;
-        justify-content: end;
-        align-items: flex-end;
-        margin-top: -260px;
-        margin-bottom: 40px;
-        margin-left: 10px;
-}
-}
-@media (max-width: 1173px){
-    ul > li{
-        max-width: 600px;
-        }
-    .formatos{
-        display: flex;
-        justify-content: end;
-        align-items: flex-end;
-        margin-top: -260px;
-        margin-bottom: 40px;
-        margin-left: 10px;
-}
-}
-@media (max-width: 1110px){
-    ul > li{
-        max-width: 550px;
-        }
-    .formatos{
-        display: flex;
-        justify-content: end;
-        align-items: flex-end;
-        margin-top: -260px;
-         margin-bottom: 40px;
-        margin-left: 10px;
-}
-}
-@media (max-width: 1050px){
-    ul > li{
-        max-width: 500px;
-        }
-    .formatos{
-        display: flex;
-        justify-content: end;
-        align-items: flex-end;
-        margin-top: -320px;
-        margin-bottom: 40px;
-        margin-left: 10px;
-}
-}
-@media (max-width: 985px){
-    ul > li{
+    .ulencurtador{
         max-width: 100%;
     }
-    .formatos{
+    .boxformatos{
         display: none;
     }
 }
